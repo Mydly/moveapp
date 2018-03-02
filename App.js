@@ -61,8 +61,7 @@ export default class App extends Component {
       <TabBar.Item
         title="Life"
         key="Life"
-        icon={{"uri":"http://www.movesay.com/static/default/home/img/main-logo.png"}
-        }
+        icon={<Image src={require('./alipay.png')} />}
         selected={this.state.selectedTab === 'blueTab'}
         onPress={() => {
           this.setState({
@@ -74,7 +73,8 @@ export default class App extends Component {
         <Text>4ws</Text>
       </TabBar.Item>
       <TabBar.Item
-        icon={<Image src={require('./alipay.png')} />}
+        icon={{"uri":"http://www.movesay.com/static/default/home/img/main-logo.png"}
+        }
         selectedIcon={
           <div style={{
             width: '22px',
